@@ -12,8 +12,9 @@
     <% messages.forEach(function(message) { %>
     <p><%= message.text %></p>
     <p><%= message.user %></p>
-    <p><%= message.added %></p>
+    <p><%= message.added.fromNow() %></p>
 
     <% }); %>
+    <a href="/new"><button>Click to Send a message</button></a>
   </body>
 </html>
