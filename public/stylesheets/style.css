@@ -1,8 +1,101 @@
+* {
+  font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #dddddd;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.chatContainer {
+  background-color: #ffffff;
+  width: 60%;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001f3f;
+  color: #0074d9;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.imgIcon {
+  width: 10px;
+}
+.messagesDiv {
+  padding: 1em;
+}
+.message {
+  background-color: #001f3f;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+button {
+  background-color: #0074d9;
+  color: #ffffff;
+  border: transparent;
+  padding: 10px;
+  border-radius: 0.25rem;
+}
+.submit {
+  background-color: #0074d9;
+  color: #ffffff;
+  border: transparent;
+  padding: 10px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.textInput {
+  border: none;
+  border-bottom: 1px solid #0074d9;
+  padding: 10px 20px;
+  width: 70%;
+  outline: none;
+}
+.formDiv {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.topic {
+  padding: 10px 50px;
+}
+.actionButtonsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.back {
+  background-color: #ff4136;
+  color: #ffffff;
+  border: transparent;
+  padding: 10px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
 }
