@@ -17,7 +17,7 @@ a {
 
 .chatContainer {
   background-color: #ffffff;
-  width: 60%;
+  /* width: 60%; */
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
@@ -35,6 +35,9 @@ a {
 }
 .messagesDiv {
   padding: 1em;
+  overflow: auto;
+  height: 500px;
+  width: 500px;
 }
 .message {
   background-color: #001f3f;
@@ -50,6 +53,7 @@ button {
   border: transparent;
   padding: 10px;
   border-radius: 0.25rem;
+  width: 100%;
 }
 .submit {
   background-color: #0074d9;
@@ -58,7 +62,6 @@ button {
   padding: 10px;
   border-radius: 0.25rem;
   cursor: pointer;
-
 }
 
 .form {
@@ -97,5 +100,23 @@ button {
   padding: 10px;
   border-radius: 0.25rem;
   cursor: pointer;
-
 }
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .messagesDiv {
+    height: 100vh;
+  }
+  .chatContainer {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .messagesDiv {
+    height: 100vh;
+  }
+  .chatContainer {
+    height: 100vh;
+  }
+}
+/*Small smartphones [325px -> 425px]*/
