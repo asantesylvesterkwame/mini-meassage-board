@@ -20,9 +20,7 @@ var app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.use(
-  cors({ origin: "https://opinions.up.railway.app/", credentials: true })
-);
+app.use(cors());
 app.use(limiter);
 app.use(logger("dev"));
 app.use(express.json());
