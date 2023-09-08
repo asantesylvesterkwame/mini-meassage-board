@@ -1,6 +1,9 @@
 {
   "name": "mini-message-board",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=18.14.1"
+  },
   "private": true,
   "scripts": {
     "start": "nodemon app.js"
@@ -10,6 +13,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "express-rate-limit": "^6.11.0",
     "http-errors": "~1.6.3",
     "moment": "^2.29.4",
     "mongoose": "^7.5.0",
