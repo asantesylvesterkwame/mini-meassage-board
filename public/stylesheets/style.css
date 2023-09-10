@@ -105,18 +105,24 @@ button {
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
   .messagesDiv {
+    width: 70%;
     height: 100vh;
   }
   .chatContainer {
     height: 100vh;
+    width: 70%;
+
   }
 }
 @media only screen and (max-width: 425px) {
   .messagesDiv {
     height: 100vh;
+    width: 70%;
+
   }
   .chatContainer {
     height: 100vh;
+    width: 70%;
   }
 }
 /*Small smartphones [325px -> 425px]*/
